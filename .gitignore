@@ -1,1 +1,5 @@
 .venv
+mlflow.db
+deep_learning_services-main
+datasets
+.mlflow
