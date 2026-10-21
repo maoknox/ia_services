@@ -1,7 +1,7 @@
 name: Pipeline CI/CD MlOps
 on:
-		pull_request:
-				branches: [ dev ]
+  pull_request:
+		branches: [ dev ]
 jobs:
 	build_and_test:
 		runs_on: ubuntu-latest
