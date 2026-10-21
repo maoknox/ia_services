@@ -1,5 +1,6 @@
 .venv
 mlflow.db
 deep_learning_services-main
-datasets
 .mlflow
+.comandosgenerales
+python\credit_scoring\datasets\german-Credit-Risk-Classification-master

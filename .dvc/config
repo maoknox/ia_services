@@ -1,0 +1,2 @@
+['remote "ia_service_storage"']
+    url = https://dagshub.com/femauro/ia_services.dvc
