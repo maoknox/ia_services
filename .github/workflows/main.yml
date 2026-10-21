@@ -1,21 +1,21 @@
 name: Pipeline CI/CD MlOps
 on:
-    pull_request:
-        branches: [ dev ]
-    jobs:
-        build_and_test:
-            runs_on: ubuntu-latest
-            steps:
-                - name: Check repository
-                  uses: actions/checkout@v4
-            
-                - name: Setup Python
-                  uses: actions/setup-python@v5
-                  with: 
-                    python-version: '3.11.0'
-                
-                - name: Install requirements
-                  run: pip install -r ./python/credit_scoring/requireents.txt
+		pull_request:
+				branches: [ dev ]
+jobs:
+	build_and_test:
+		runs_on: ubuntu-latest
+		steps:
+				- name: Check repository
+			  uses: actions/checkout@v4
+		
+			- name: Setup Python
+			  uses: actions/setup-python@v5
+			  with: 
+				python-version: '3.11.0'
+			
+			- name: Install requirements
+			  run: pip install -r ./python/credit_scoring/requireents.txt
 
-                - name: Run test
-                  run: python/credit_scoring/tests/test_model_creation.py
+			- name: Run test
+			  run: python/credit_scoring/tests/test_model_creation.py
